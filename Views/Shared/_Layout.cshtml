@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bob</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://unpkg.com/ag-grid-community@20.2.0/dist/styles/ag-grid.css" rel="stylesheet" />
+    <link href="https://unpkg.com/ag-grid-community@20.2.0/dist/styles/ag-theme-balham.css" rel="stylesheet" />
+    <script src="https://unpkg.com/react@latest/umd/react.development.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/prop-types@15.7.2/prop-types.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ag-grid-community@20.2.0/dist/ag-grid-community.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ag-grid-react@20.2.0/umd/ag-grid-react.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js" crossorigin="anonymous"></script>
+    <script type="text/babel" data-presets="es2017, stage-3" data-plugins="syntax-async-functions,transform-class-properties">
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="~/app/components/Grid/grid.jsx"></script>
+    <script type="text/babel" src="~/app/components/Ribbon/ribbon.jsx"></script>
+    <script type="text/babel" src="~/app/components/hello.jsx"></script>
+    <script type="text/babel" src="~/app/components/app.jsx"></script>
+    <script type="text/babel" src="~/app/index.jsx"></script>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>
